@@ -1,0 +1,16 @@
+extends ../template
+
+block variables
+    - var title = 'Авторизуйтесь'
+
+block content
+    h1 Авторизуйтесь
+    div
+        form
+            label(for="email") email
+            input(name="email" id="email")
+            label(for="password") password
+            input(name="password" id="password")
+            button Войти
+    //- footer для видимости
+    include ../common/footer.pug

@@ -1,0 +1,9 @@
+@import "normalize";
+body {
+    margin: 10px;
+    background: #ccc
+}
+
+@import 'common/menu';
+@import 'common/technologies';
+@import 'common/slider';
