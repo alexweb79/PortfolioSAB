@@ -4,25 +4,46 @@ block variables
     - var title = 'Александр Смирнов | Личный сайт веб разработчика'
 
 block content
-    div.welcome-login
-        button.welcome-login-btn Авторизоваться
-    div.welcome-center
-        img(src="assets/images/img/Alex.jpeg", alt="Александр Смирнов")
-        h1 Александр Смирнов
-        p Личный сайт веб разработчика
-        ul.social-welcome
-            li
-                img(src='assets/images/icons/vk.svg')
-            li
-                img(src='assets/images/icons/github.svg')
-            li
-                img(src='assets/images/icons/in.svg')
-        ul.button-welcome
-            li
-                a(href="/my-works.html") Мои работы
-            li
-                a(href="/about.html") Обо мне
-            li
-                a(href="/blog.html") Блог
-    div.welcome-footer
-        p.copyright &copy; Александр Смирнов | LoftSchool 2017
+    div.container.container-welcome
+        div.welcome-login
+            button.welcome-login__btn
+                span.welcome-login__text Авторизоваться
+        div.welcome-center
+            div.welcome-center__foto
+                img.welcome-center__img(src="assets/images/img/Alex.jpeg", alt="Александр Смирнов")
+            span.welcome-center__name Александр Смирнов
+            span.welcome-center__title Личный сайт веб разработчика
+            div.social-welcome
+                a( class="social-welcome-item social-welcome-item-vk" href="https://vk.com/alexweb")
+                    svg(width="30.011px" height="17.123px")
+                        use( xlink:href="assets/images/icons/sprite-welcome-icon.svg#vk")
+                a(class="social-welcome-item social-welcome-item-github" href="https://github.com/alexweb79/")
+                    svg(width="26px" height="22px")
+                        use( xlink:href="assets/images/icons/sprite-welcome-icon.svg#github")
+                a(class="social-welcome-item social-welcome-item-in" href="https://linkedin.com/in/alexweb79/")
+                    svg(width="24px" height="22.938px")
+                        use( xlink:href="assets/images/icons/sprite-welcome-icon.svg#in")
+            //- div
+            //-     ul.social-welcome
+            //-         li.social-welcome-item
+            //-             a( class="social-welcome-item-vk" href="https://vk.com/alexweb")
+            //-                 svg(width="30.011px" height="17.123px")
+            //-                     use( xlink:href="assets/images/icons/sprite-welcome-icon.svg#vk")
+            //-         li.social-welcome-item
+            //-             a(class="social-welcome-item-github" href="https://github.com/alexweb79/")
+            //-                 svg(width="26px" height="22px")
+            //-                     use( xlink:href="assets/images/icons/sprite-welcome-icon.svg#github")
+            //-         li.social-welcome-item
+            //-             a(class="social-welcome-item-in" href="https://linkedin.com/in/alexweb79/")
+            //-                 svg(width="24px" height="22.938px")
+            //-                     use( xlink:href="assets/images/icons/sprite-welcome-icon.svg#in")
+            div.button-welcome-fontsize
+                ul.button-welcome
+                    li.button-welcome-item
+                        a(href="/my-works.html") Мои работы
+                    li.button-welcome-item
+                        a(href="/about.html") Обо мне
+                    li.button-welcome-item
+                        a(href="/blog.html") Блог
+        div.welcome-footer-copyright
+            p.copyright &copy; Александр Смирнов | LoftSchool 2017

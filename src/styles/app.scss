@@ -1,9 +1,36 @@
 @import "normalize";
-body {
-    margin: 10px;
-    background: #ccc
+@import "common/fonts";
+body,
+html {
+    // margin: 0;
+    // min-height: 100vh;
+    // display: flex;
+    // flex-direction: column;
+    font-size: 16px;
+}
+
+div {
+    // border: 1px #ff0000 solid;
+}
+
+.container {
+    // flex: 1;
+}
+
+header {
+    // margin-bottom: 20px;
+}
+
+.content-wrap {
+    // margin-bottom: 20px;
+    // background: white;
+}
+
+footer {
+    // padding: 20px;
 }
 
 @import 'common/menu';
 @import 'common/technologies';
 @import 'common/slider';
+@import 'common/welcome';

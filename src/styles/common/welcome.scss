@@ -1,0 +1,147 @@
+.container-welcome {
+    background-image: url('/assets/images/img/bg-welcome.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color: white;
+}
+
+.welcome-login {
+    display: flex;
+    align-items: flex-start;
+    align-self: flex-end;
+    margin: 20px;
+}
+
+.welcome-login__btn {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.0);
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+    padding: 12px 24px;
+    cursor: pointer;
+    &:hover {
+        background-color: #669933;
+        border: 2px solid #669900;
+    }
+}
+
+.welcome-login__text {
+    font-family: 'RobotoMedium', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.welcome-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px 0 0 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.welcome-center__foto {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.welcome-center__img {
+    max-width: 100%;
+}
+
+.welcome-center__name {
+    font-family: 'RobotoMedium', sans-serif;
+    font-size: 1.8rem;
+    padding-top: 20px;
+    line-height: 34px;
+}
+
+.welcome-center__title {
+    font-family: 'RobotoRegular', sans-serif;
+    font-size: 1rem;
+    line-height: 24px;
+    color: #cccccc;
+}
+
+.social-welcome,
+.button-welcome {
+    padding: 0;
+}
+
+.social-welcome {
+    margin-top: 35px;
+    margin-bottom: 40px;
+}
+
+.social-welcome-item,
+.button-welcome-item {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.social-welcome-item a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.social-welcome-item {
+    padding: 0px 15px;
+}
+
+.social-welcome-item-vk svg,
+.social-welcome-item-github svg,
+.social-welcome-item-in svg {
+    fill: #cccccc;
+    &:hover {
+        fill: #669966;
+    }
+}
+
+.button-welcome-fontsize {
+    font-size: 0;
+}
+
+.button-welcome-item a {
+    display: inline-block;
+    background-color: #669966;
+    font-family: 'RobotoMedium', sans-serif;
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.button-welcome-item {
+    border-right-width: 2px;
+    border-right-style: solid;
+    border-right-color: #99cc99;
+    &:last-child {
+        border-right-width: 0px;
+    }
+}
+
+.button-welcome-item a:hover,
+.button-welcome-item a:active {
+    background-color: #336633;
+}
+
+.welcome-footer-copyright {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-family: 'RobotoRegular', sans-serif;
+    font-size: 1rem;
+    color: #cccccc;
+}
