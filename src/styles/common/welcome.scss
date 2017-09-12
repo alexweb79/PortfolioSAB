@@ -82,12 +82,20 @@
     padding: 35px 15px 40px;
 }
 
+.social-welcome-item-vk svg,
+.social-welcome-item-github svg,
+.social-welcome-item-in svg {
+    fill: #cccccc;
+    &:hover {
+        fill: #669966;
+    }
+}
+
 .button-welcome-fontsize {
     font-size: 0;
 }
 
-.button-welcome-item a,
-.button-welcome-item svg {
+.button-welcome-item a {
     display: inline-block;
     background-color: #669966;
     font-family: 'RobotoMedium', sans-serif;
