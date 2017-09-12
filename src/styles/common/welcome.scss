@@ -85,35 +85,35 @@
     margin-bottom: 40px;
 }
 
-.social-welcome-item,
-.button-welcome-item {
+.social-welcome__item,
+.button-welcome__item {
     display: inline-block;
     text-decoration: none;
 }
 
-.social-welcome-item a {
+.social-welcome__item a {
     display: inline-block;
     text-decoration: none;
 }
 
-.social-welcome-item {
+.social-welcome__item {
     padding: 0px 15px;
 }
 
-.social-welcome-item-vk svg,
-.social-welcome-item-github svg,
-.social-welcome-item-in svg {
+.social-welcome__item_vk svg,
+.social-welcome__item_github svg,
+.social-welcome__item_in svg {
     fill: #cccccc;
     &:hover {
         fill: #669966;
     }
 }
 
-.button-welcome-fontsize {
+.button-welcome-fix-fontsize {
     font-size: 0;
 }
 
-.button-welcome-item a {
+.button-welcome__item a {
     display: inline-block;
     background-color: #669966;
     font-family: 'RobotoMedium', sans-serif;
@@ -123,7 +123,7 @@
     text-decoration: none;
 }
 
-.button-welcome-item {
+.button-welcome__item {
     border-right-width: 2px;
     border-right-style: solid;
     border-right-color: #99cc99;
@@ -132,15 +132,18 @@
     }
 }
 
-.button-welcome-item a:hover,
-.button-welcome-item a:active {
+.button-welcome__item a:hover,
+.button-welcome__item a:active {
     background-color: #336633;
 }
 
-.welcome-footer-copyright {
+.welcome-footer {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+}
+
+.welcome-footer__copyright {
     font-family: 'RobotoRegular', sans-serif;
     font-size: 1rem;
     color: #cccccc;
