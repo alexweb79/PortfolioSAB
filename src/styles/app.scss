@@ -2,7 +2,10 @@
 @import "common/fonts";
 body,
 html {
+    font-family: "RobotoRegular";
     font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
 }
 
 div {
@@ -21,3 +24,4 @@ footer {
 @import 'common/technologies';
 @import 'common/slider';
 @import 'common/welcome';
+@import 'common/login';
