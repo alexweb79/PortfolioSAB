@@ -2,22 +2,16 @@
 @import "common/fonts";
 body,
 html {
-    font-family: "RobotoRegular";
+    font-family: "RobotoRegular", sans-serif;
     font-size: 16px;
     font-weight: 400;
     font-style: normal;
+    max-width: 1800px;
+    margin: 0 auto;
 }
 
 div {
-    // border: 1px #ff0000 solid;
-}
-
-.container {
-    // flex: 1;
-}
-
-footer {
-    // padding: 20px;
+    border: 1px #ff0000 solid;
 }
 
 @import 'common/menu';
@@ -25,3 +19,6 @@ footer {
 @import 'common/slider';
 @import 'common/welcome';
 @import 'common/login';
+@import 'common/about';
+@import 'common/my-works';
+@import 'common/blog';

@@ -75,34 +75,34 @@
     color: #cccccc;
 }
 
-.social-welcome,
+.welcome-social,
 .button-welcome {
     padding: 0;
 }
 
-.social-welcome {
+.welcome-social {
     margin-top: 35px;
 }
 
-.social-welcome__item,
+.social__item,
 .button-welcome__item {
     display: inline-block;
     text-decoration: none;
 }
 
-.social-welcome__item a {
+.social__item a {
     display: inline-block;
     text-decoration: none;
 }
 
-.social-welcome__item {
+.social__item {
     padding: 0px 15px;
 }
 
-.social-welcome__item_vk svg,
-.social-welcome__item_github svg,
-.social-welcome__item_in svg {
-    fill: #cccccc;
+.social__item_vk svg,
+.social__item_github svg,
+.social__item_in svg {
+    fill: #ffffff;
     &:hover {
         fill: #669966;
     }
