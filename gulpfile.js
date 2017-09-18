@@ -31,6 +31,10 @@ const paths = {
     scripts: {
         src: 'src/scripts/**/*.js',
         dest: 'build/assets/scripts/'
+    },
+    fonts: {
+        src: 'src/fonts/**/*.*',
+        dest: 'build/assets/fonts/'
     }
 }
 
@@ -69,6 +73,7 @@ function watch() {
     gulp.watch(paths.styles.src, styles);
     gulp.watch(paths.templates.src, templates);
     gulp.watch(paths.images.src, images);
+    gulp.watch(paths.fonts.src, fonts);
     gulp.watch(paths.scripts.src, scripts);
 }
 
@@ -91,14 +96,25 @@ exports.styles = styles;
 exports.del = del;
 exports.images = images;
 
+// просто переносим шрифты
+function fonts() {
+    return gulp.src(paths.fonts.src)
+        .pipe(gulp.dest(paths.fonts.dest));
+}
+
+exports.templates = templates;
+exports.styles = styles;
+exports.del = del;
+exports.fonts = fonts;
+
 // просто работаем
 gulp.task('default', gulp.series(
-    gulp.parallel(styles, templates, scripts, images),
+    gulp.parallel(styles, templates, scripts, images, fonts),
     gulp.parallel(watch, server)
 ));
 
 // контрольная сборка на продакшен
 gulp.task('build', gulp.series(
     clean,
-    gulp.parallel(styles, templates, scripts, images)
+    gulp.parallel(styles, templates, scripts, images, fonts)
 ));
