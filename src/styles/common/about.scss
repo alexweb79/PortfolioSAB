@@ -119,6 +119,12 @@ section.about {
     }
 }
 
+.user-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .user-description__image {
     display: flex;
     justify-content: center;
@@ -127,6 +133,21 @@ section.about {
 .user-description__title {
     display: flex;
     justify-content: center;
+}
+
+.user-description__avatar {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.user-description__text {
+    display: flex;
+    justify-content: center;
+}
+
+.text-content {
+    // max-width: 400px;
+    padding: 0 50px;
 }
 
 .welcome-center__title-block-subtitle {
@@ -143,4 +164,74 @@ section.about {
         margin: 20px auto;
         background-color: #4B574D;
     }
+}
+
+.about__right-content {}
+
+.skills-list {
+    width: 100%;
+}
+
+.skills-list__item {
+    list-style-type: none;
+    width: 100%;
+}
+
+.skills-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.skills-row__title {}
+
+.skills-row__list {}
+
+.skills-row__item {}
+
+.skill {
+    width: 100px;
+}
+
+.skill__circle {}
+
+.skill__title {}
+
+.google-map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 700px;
+    background-image: url('../../assets/images/img/map.png');
+    background-repeat: no-repeat;
+    background-position-y: top;
+    background-position-x: center;
+}
+
+.map__contacts {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+}
+
+.contacts__item {
+    list-style-type: none;
+}
+
+.contacts-row {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+}
+
+.contacts-row__icon {
+    // padding: 5px;
+}
+
+.contacts-row__content {
+    padding-left: 15px;
 }

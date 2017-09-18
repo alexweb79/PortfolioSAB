@@ -49,15 +49,17 @@ block content
                         img(src="assets/images/img/fashmark-men-trends-nature.png", alt="" title="").user-description__avatar
                     .user-description__title
                         .block-subtitle.welcome-center__title.welcome-center__title_color-black.welcome-center__title-block-subtitle Кто я
-                    .user-description__text.text-content
-                        p Я веб-разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
-                        p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
+                    .user-description__text
+                        .text-content
+                            p Я веб-разработчик из Твери. Мне 38 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+                            p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
         .about__right
             .triangle.tringle_fill_beige.about__right-triangle
             .about__right-title
-                .block-subtitle Чем я могу быть вам полезен
-            .about__right-text.text-content
-                p Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
+                .block-subtitle.welcome-center__title.welcome-center__title_color-black.welcome-center__title-block-subtitle Чем я могу быть<br> вам полезен
+            .about__right-text
+                .text-content
+                    p Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
             .about__right-content
                 ul.skills-list
                 each item in ['Frontend', 'Backend', 'Workflow']
@@ -73,22 +75,23 @@ block content
     section.section.map
         .google-map
             .map__contacts
-            .contacts
-                .contacts__title
-                    .block-subtitle Контакты
-                ul.contacts__list
-                - 
-                    var contacts = [
-                        ['skype', 'skype_kdn'],
-                        ['mail', 'astahov@gmail.com'],
-                        ['phone', '+79211 123 23 23'],
-                        ['mark', 'Новосибирск'],
-                    ]
-                each contact in contacts
-                    li.contacts__item
-                    .contacts-row
-                        .contacts-row__icon #{contact[0]}
-                        .contacts-row__content #{contact[1]}
+                .contacts
+                    .contacts__title
+                        .block-subtitle.welcome-center__title.welcome-center__title_color-black.welcome-center__title-block-subtitle Контакты
+                    ul.contacts__list
+                    - 
+                        var contacts = [
+                            ['skype.svg', 'Alexweb79'],
+                            ['envelope2.svg', 'alexweb1979@gmail.com'],
+                            ['phone2.svg', '+7 920 69 39 333'],
+                            ['map_marker.svg', 'Тверь'],
+                        ]
+                    each contact in contacts
+                        li.contacts__item
+                        .contacts-row
+                            .contacts-row__icon
+                                img(src=`/assets/images/icons/${contact[0]}`)
+                            .contacts-row__content #{contact[1]}
         footer.map__footer.footer
         .footer__row
             .container
