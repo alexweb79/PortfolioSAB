@@ -1,0 +1,39 @@
+.welcome-social {
+    padding: 0;
+}
+
+.welcome-social {
+    // margin-top: 35px;
+}
+
+.social__item {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.social__item a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.social__item {
+    padding: 0px 15px;
+}
+
+.social__item_vk svg,
+.social__item_github svg,
+.social__item_in svg {
+    fill: #ffffff;
+    &:hover {
+        fill: #669966;
+    }
+}
+
+.footer__col .social__item_vk svg,
+.footer__col .social__item_github svg,
+.footer__col .social__item_in svg {
+    fill: #aaadae;
+    &:hover {
+        fill: #FFFFFF;
+    }
+}

@@ -19,14 +19,15 @@ div {
     // border: 1px #ff0000 solid;
 }
 
-@import 'common/menu';
-@import 'common/technologies';
-@import 'common/slider';
+// @import 'common/technologies';
+// @import 'common/slider';
 @import 'common/welcome';
 @import 'common/login';
 @import 'common/header';
+@import 'common/social';
 @import 'common/triangle';
 @import 'common/my-works';
 @import 'common/about';
 @import 'common/blog';
 @import 'common/footer';
+@import 'common/menu-footer';

@@ -15,27 +15,19 @@ block content
                 img(src="assets/images/img/Alex.jpeg", alt="Александр Смирнов").welcome-center__img
             span.welcome-center__name Александр Смирнов
             span.welcome-center__option Личный сайт веб разработчика
-            div.welcome-social__wrap
-                ul.welcome-social
-                    li.social__item
-                        a(class="social__item_vk" href="https://vk.com/alexweb")
-                            svg(width="30.011px" height="17.123px")
-                                use( xlink:href="assets/images/icons/sprite-welcome-icon.svg#vk")
-                    li.social__item
-                        a(class="social__item_github" href="https://github.com/alexweb79/")
-                            svg(width="26px" height="22px")
-                                use( xlink:href="assets/images/icons/sprite-welcome-icon.svg#github")
-                    li.social__item
-                        a(class="social__item_in" href="https://linkedin.com/in/alexweb79/")
-                            svg(width="24px" height="22.938px")
-                                use( xlink:href="assets/images/icons/sprite-welcome-icon.svg#in")
+
+            include ../common/social.pug
+            
             div.button-welcome-fix-fontsize
                 ul.button-welcome
+                - 
+                    var buttons = [
+                        ['Мои работы', '/my-works.html'],
+                        ['Обо мне', '/about.html'],
+                        ['Блог', '/blog.html'],
+                    ]
+                each button in buttons
                     li.button-welcome__item
-                        a(href="/my-works.html") Мои работы
-                    li.button-welcome__item
-                        a(href="/about.html") Обо мне
-                    li.button-welcome__item
-                        a(href="/blog.html") Блог
+                        a(href=`${button[1]}`) #{button[0]}
         div.welcome-footer
             p.welcome-footer__copyright &copy; Александр Смирнов | LoftSchool 2017

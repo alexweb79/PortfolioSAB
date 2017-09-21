@@ -75,37 +75,13 @@
     color: #cccccc;
 }
 
-.welcome-social,
 .button-welcome {
     padding: 0;
 }
 
-.welcome-social {
-    margin-top: 35px;
-}
-
-.social__item,
 .button-welcome__item {
     display: inline-block;
     text-decoration: none;
-}
-
-.social__item a {
-    display: inline-block;
-    text-decoration: none;
-}
-
-.social__item {
-    padding: 0px 15px;
-}
-
-.social__item_vk svg,
-.social__item_github svg,
-.social__item_in svg {
-    fill: #ffffff;
-    &:hover {
-        fill: #669966;
-    }
 }
 
 .button-welcome-fix-fontsize {
@@ -157,5 +133,5 @@
 .welcome-footer__copyright {
     font-family: 'RobotoRegular', sans-serif;
     font-size: 1rem;
-    color: #cccccc;
+    color: #ffffff;
 }

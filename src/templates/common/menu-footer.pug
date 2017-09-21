@@ -1,9 +1,12 @@
-ul.menu
-    li
-        a(href="/my-works.html") Мои работы
-    li
-        a(href="/about.html") Обо мне
-    li
-        a(href="/blog.html") Блог
-    li
-        a(href="/index.html") Авторизация
+.menu-footer
+    ul.menu-footer__list
+    - 
+        var items = [
+            ['Мои работы', '/my-works.html'],
+            ['Обо мне', '/about.html'],
+            ['Блог', '/blog.html'],
+            ['Авторизация', '/index.html'],
+        ]
+    each item in items
+        li.menu-footer__item
+            a(href=`${item[1]}`).menu-footer__link #{item[0]}

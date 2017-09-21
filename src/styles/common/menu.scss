@@ -1,7 +1,31 @@
-.menu{
-    padding: 0;
-    li{
-        display: inline-block;
-        list-style: none;
-    }
+.block__main-menu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../images/img/forest_prel_bg.jpg');
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.x {}
+
+.main-menu {}
+
+.main-menu__list {}
+
+.main-menu__item {
+    font-family: 'Sansus-Webissimo-Regular';
+    font-size: 7rem;
+    list-style-type: none;
+    text-align: center;
+    margin: 15px;
+}
+
+.main-menu__link {
+    color: #333333;
+    text-decoration: none;
 }

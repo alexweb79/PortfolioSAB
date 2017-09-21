@@ -1,0 +1,22 @@
+.menu-footer {
+    display: flex;
+}
+
+.menu-footer__list {
+    margin: 0;
+    padding: 0;
+}
+
+.menu-footer__item {
+    list-style-type: none;
+}
+
+.menu-footer__link {
+    font-weight: 600;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-right: 20px;
+    &:hover {
+        text-decoration: underline;
+    }
+}
