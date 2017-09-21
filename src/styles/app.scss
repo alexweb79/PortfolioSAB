@@ -6,8 +6,13 @@ html {
     font-size: 16px;
     font-weight: 400;
     font-style: normal;
-    // max-width: 1800px;
-    // margin: 0 auto;
+    height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 div {
@@ -19,8 +24,9 @@ div {
 @import 'common/slider';
 @import 'common/welcome';
 @import 'common/login';
-@import 'common/about';
-@import 'common/my-works';
-@import 'common/blog';
 @import 'common/header';
+@import 'common/triangle';
+@import 'common/my-works';
+@import 'common/about';
+@import 'common/blog';
 @import 'common/footer';

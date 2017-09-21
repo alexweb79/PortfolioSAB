@@ -12,9 +12,15 @@ block content
     //- h2 #{skills.about}
 
     include ../common/header.pug
+    .triangle
+        .triangle__left
+            svg(width="100%" height="100" viewBox="0 0 900.006 164.986" preserveAspectRatio="none")
+                path(d="M0.01,0l899.997,159.008v854.979H0L0.01,0z").triangle_fill_beige
+        .triangle__right
+            svg(width="100%" height="100" viewBox="0 0 900.006 160.986" preserveAspectRatio="none")
+                path(d="M0,155.008L900.331,0l-0.005,1009.986H0V155.008z").triangle_fill_white
     section.section.about
         .about__left
-            .triangle.tringle_fill_white.about__left-triangle
             .about__left-title
                 .block-title.welcome-center__title.welcome-center__title_color-black Обо мне
             .about__left-content
@@ -28,7 +34,6 @@ block content
                             p Я веб-разработчик из Твери. Мне 38 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
                             p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
         .about__right
-            .triangle.tringle_fill_beige.about__right-triangle
             .about__right-title
                 .block-subtitle.welcome-center__title.welcome-center__title_color-black.welcome-center__title-block-subtitle Чем я могу быть<br> вам полезен
             .about__right-text
@@ -121,4 +126,4 @@ block content
                             .contacts-row__icon
                                 img(src=`/assets/images/icons/${contact[0]}`)
                             .contacts-row__content #{contact[1]}
-        include ../common/footer.pug
+    include ../common/footer.pug

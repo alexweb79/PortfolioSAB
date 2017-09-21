@@ -17,28 +17,7 @@ section.about {
 }
 
 .about__right {
-    background-color: #F4F5F0;
-}
-
-.triangle {
-    min-height: 175px;
-    margin-top: -175px;
-}
-
-.tringle_fill_white {}
-
-.about__left-triangle {
-    background-image: url('../../assets/images/icons/about_bg_left.svg');
-    background-repeat: no-repeat;
-    background-position: top;
-    width: 100%;
-}
-
-.about__right-triangle {
-    background-image: url('../../assets/images/icons/about_bg_right.svg');
-    background-repeat: no-repeat;
-    background-position: top;
-    width: 100%;
+    background-color: #FFFFFF;
 }
 
 .about__left-title {
@@ -50,7 +29,7 @@ section.about {
     background-position: top;
     // background-size: cover;
     width: 100%;
-    margin-top: -60px;
+    margin-top: -30px;
     // height: 300px;
 }
 
@@ -302,6 +281,10 @@ section.section.map {
     padding-bottom: 20px;
     border-radius: 5px;
     margin-top: -194px;
+}
+
+.contacts__title {
+    padding-top: 20px;
 }
 
 .contacts__item {

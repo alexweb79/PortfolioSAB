@@ -1,12 +1,11 @@
-.section.hero {
+.hero {
     background-image: url('/assets/images/img/bg-welcome.png');
-    background-position: top;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 700px;
+    min-height: 540px;
     display: flex;
     justify-content: space-between;
-    // align-items: center;
     flex-wrap: wrap;
     flex-direction: row;
     color: white;

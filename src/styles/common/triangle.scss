@@ -1,0 +1,28 @@
+.triangle {
+    display: flex;
+    flex-direction: row;
+    margin-top: -100px;
+    height: 100px;
+}
+
+.triangle__left,
+.triangle__right {
+    flex-basis: 50%;
+}
+
+.triangle__left {
+    justify-content: flex-end;
+}
+
+.triangle__right {
+    justify-content: flex-start;
+}
+
+.triangle_fill_white {
+    // fill: #f4f5f0;
+    fill: #ffffff;
+}
+
+.triangle_fill_beige {
+    fill: #ebefe2;
+}
