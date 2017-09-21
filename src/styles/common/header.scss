@@ -1,0 +1,53 @@
+.hero {
+    background-image: url('/assets/images/img/bg-welcome.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 540px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    color: white;
+    padding-top: 20px;
+}
+
+.hero__socials {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    flex-basis: 20%;
+    padding-left: 15px;
+}
+
+.social__item-about {
+    padding-right: 0px;
+    padding-left: 15px;
+}
+
+.hero__title {
+    flex-basis: 50%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.user__description {
+    text-align: center;
+}
+
+.hamburger.hero__menu {
+    display: flex;
+    flex-basis: 20%;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-right: 15px;
+}
+
+.arrow-down.hero__scroll-btn {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+    align-items: center;
+}

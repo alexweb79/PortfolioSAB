@@ -1,70 +1,71 @@
 @font-face {
     font-family: "RobotoRegular";
-    src: url("../src/fonts/Roboto-Regular.ttf");
+    src: url("/assets/fonts/Roboto-Regular.ttf");
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: "RobotoMedium";
-    src: url("../src/fonts/Roboto-Medium.ttf");
+    src: url("/assets/fonts/Roboto-Medium.ttf");
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
     font-family: "RobotoBold";
-    src: url("../src/fonts/Roboto-Bold.ttf");
+    src: url("/assets/fonts/Roboto-Bold.ttf");
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: "RobotoBoldItalic";
-    src: url("../src/fonts/Roboto-BoldItalic.ttf");
+    src: url("/assets/fonts/Roboto-BoldItalic.ttf");
     font-weight: 700;
     font-style: italic;
 }
 
 @font-face {
     font-family: "RobotoItalic";
-    src: url("../src/fonts/Roboto-Italic.ttf");
+    src: url("/assets/fonts/Roboto-Italic.ttf");
     font-weight: 400;
     font-style: italic;
 }
 
 @font-face {
     font-family: "RobotoLight";
-    src: url("../src/fonts/Roboto-Light.ttf");
+    src: url("/assets/fonts/Roboto-Light.ttf");
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: "RobotoLightItalic";
-    src: url("../src/fonts/Roboto-LightItalic.ttf");
+    src: url("/assets/fonts/Roboto-LightItalic.ttf");
     font-weight: 300;
     font-style: italic;
 }
 
 @font-face {
     font-family: "RobotoMediumItalic";
-    src: url("../src/fonts/Roboto-MediumItalic.ttf");
+    src: url("/assets/fonts/Roboto-MediumItalic.ttf");
     font-weight: 600;
     font-style: italic;
 }
 
 @font-face {
     font-family: "fontawesome";
-    src: url("../src/fonts/fontawesome-webfont.ttf");
-    src: url("../src/fonts/FontAwesome.otf");
+    src: url("/assets/fonts/fontawesome-webfont.ttf");
+    src: url("/assets/fonts/FontAwesome.otf");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: "SansusWebissimoRegular";
-    src: url("../src/fonts/Sansus-Webissimo-Regular.ttf");
+    font-family: "Sansus-Webissimo-Regular";
+    src: url("/assets/fonts/Sansus-Webissimo-Regular.ttf");
+    src: url("/assets/fonts/Sansus-Webissimo-Regular.ttf") format('truetype'), url("/assets/fonts/Sansus-Webissimo-Regular.otf") format('otf'), url("/assets/fonts/Sansus-Webissimo-Regular.woff") format('woff'), url("/assets/fonts/Sansus-Webissimo-Regular.woff2") format('woff2');
     font-weight: 400;
     font-style: normal;
 }

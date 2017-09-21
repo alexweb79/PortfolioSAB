@@ -1,0 +1,27 @@
+section.section.hero
+        .hero__socials
+            ul.welcome-social
+            - 
+                var socials = [
+                    ['vk', 'https://vk.com/alexweb', '30', '17'],
+                    ['github', 'https://github.com/alexweb79/', '26', '22'],
+                    ['in', 'https://linkedin.com/in/alexweb79/', '24', '23'],
+                ]
+            each social in socials
+                li.social__item.social__item-about
+                    a(href=`${social[1]}` class=`social__item social__item_${social[0]}`)
+                        svg(width=`${social[2]}px` height=`${social[3]}px`)
+                            use( xlink:href=`assets/images/icons/sprite-welcome-icon.svg#${social[0]}`)
+        .hero__title
+            .section-title
+            .user.hero__user
+                .user__pic.welcome-center__foto
+                    img.user__pic-img.welcome-center__img(src="assets/images/img/Alex.jpeg", alt="")
+                .user__description
+                    .user__name.welcome-center__name Александр Смирнов
+                    .user__info.welcome-center__option Личный сайт разработчика
+        .hamburger.hero__menu
+            img(src="assets/images/icons/hamburger.svg", alt="Меню" title="Меню")
+        .arrow-down.hero__scroll-btn
+            img(src="assets/images/icons/arrow_down.svg", alt="arrow_down" title="arrow_down")
+        

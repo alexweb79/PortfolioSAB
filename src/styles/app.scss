@@ -2,22 +2,21 @@
 @import "common/fonts";
 body,
 html {
-    font-family: "RobotoRegular";
+    font-family: "RobotoRegular", sans-serif;
     font-size: 16px;
     font-weight: 400;
     font-style: normal;
+    height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 div {
     // border: 1px #ff0000 solid;
-}
-
-.container {
-    // flex: 1;
-}
-
-footer {
-    // padding: 20px;
 }
 
 @import 'common/menu';
@@ -25,3 +24,9 @@ footer {
 @import 'common/slider';
 @import 'common/welcome';
 @import 'common/login';
+@import 'common/header';
+@import 'common/triangle';
+@import 'common/my-works';
+@import 'common/about';
+@import 'common/blog';
+@import 'common/footer';
