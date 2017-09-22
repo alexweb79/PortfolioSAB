@@ -1,0 +1,158 @@
+.skills-list {
+    // width: 100%;
+}
+
+.skills-list__item {
+    list-style-type: none;
+    width: 100%;
+}
+
+.skills-row {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.skills-row__title {
+    margin-top: 20px;
+    color: #666666;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.skills-row__list {
+    padding: 0;
+}
+
+.skills-row__item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.skill {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.skill__circle {
+    width: 120px;
+    height: 120px;
+    position: relative;
+    margin: 5px;
+}
+
+.skill__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #669966;
+    text-align: center;
+}
+
+//circle
+.circles {
+    fill: none;
+    stroke-width: 15;
+}
+
+.circle__first {
+    stroke: #dfdcd5;
+}
+
+.circle__second {
+    stroke: #669966;
+    stroke-dasharray: .0010 282.6;
+    transition: all 1s;
+}
+
+.circles .circle-0 {
+    stroke-dasharray: .001 282.6;
+}
+
+.circles .circle-10 {
+    stroke-dasharray: 28.26 282.6;
+}
+
+.circles .circle-15 {
+    stroke-dasharray: 42.39 282.6;
+}
+
+.circles .circle-20 {
+    stroke-dasharray: 56.52 282.6;
+}
+
+.circles .circle-25 {
+    stroke-dasharray: 70.65 282.6;
+}
+
+.circles .circle-30 {
+    stroke-dasharray: 84.78 282.6;
+}
+
+.circles .circle-35 {
+    stroke-dasharray: 98.91 282.6;
+}
+
+.circles .circle-40 {
+    stroke-dasharray: 113.04 282.6;
+}
+
+.circles .circle-45 {
+    stroke-dasharray: 127.17 282.6;
+}
+
+.circles .circle-50 {
+    stroke-dasharray: 141.3 282.6;
+}
+
+.circles .circle-55 {
+    stroke-dasharray: 155.43 282.6;
+}
+
+.circles .circle-60 {
+    stroke-dasharray: 169.56 282.6;
+}
+
+.circles .circle-65 {
+    stroke-dasharray: 183.69 282.6;
+}
+
+.circles .circle-70 {
+    stroke-dasharray: 197.82 282.6;
+}
+
+.circles .circle-75 {
+    stroke-dasharray: 211.95 282.6;
+}
+
+.circles .circle-80 {
+    stroke-dasharray: 226.08 282.6;
+}
+
+.circles .circle-85 {
+    stroke-dasharray: 240.21 282.6;
+}
+
+.circles .circle-90 {
+    stroke-dasharray: 254.34 282.6;
+}
+
+.circles .circle-95 {
+    stroke-dasharray: 268.47 282.6;
+}
+
+.circles .circle-100 {
+    stroke-dasharray: 282.6 282.6;
+}
+
+//circle end
