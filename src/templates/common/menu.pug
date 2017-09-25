@@ -1,0 +1,14 @@
+//- include ../common/hamburger.pug
+.block__main-menu
+    .main-menu
+        ul.main-menu__list
+        - 
+            var items = [
+                ['Мои работы', '/my-works.html'],
+                ['Обо мне', '/about.html'],
+                ['Блог', '/blog.html'],
+                ['Авторизация', '/index.html'],
+            ]
+        each item in items
+            li.main-menu__item
+                a(href=`${item[1]}`).main-menu__link #{item[0]}

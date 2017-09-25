@@ -16,61 +16,14 @@ block content
         .block-title
             .block-title__bg-my-works
                 .block-title__title.block-title__title-color-black.block-title__title-bigger Мои работы
-        .slider
-            .slider__left
-                .block-title__title.block-title__title-color-gray.block-title__title-smoller Сайт школы онлайн образования
-                .sites-description__technology-set Html, CSS, JavaScript
-                .sites-link__sites-button
-                    a(href="#" target=_blank).sites-button__link Посмотреть сайт
-            .slider__right
-                .sites__img
-                    img(src="../../assets/images/img/site1.png", alt="")
-                .sites__button
-                    .sites-button-left
-                        .sites-button-left__img-bg
-                            img(src="../../assets/images/img/site1small.png", alt="")
-                    .sites-button-right
-                        .sites-button-left__img-bg
-                            img(src="../../assets/images/img/site1small.png", alt="")
+        include ../common/slider.pug
     section.section
         .about-me
             .abut-me__title
                 .block-title
                     .block-title__bg-about-me
                         .block-title__title.block-title__title-color-black.block-title__title-bigger Что обо мне <br>говорят
-            .about-me__reviews
-                .reviews__left
-                    .rewiews__description
-                        .reviews__img
-                            img(src="../../assets/images/img/kd.png", alt="")
-                        .reviews__text Далеко-далеко за словесными горами в стране гласных, и согласных живут рыбные тексты. Далеко-далеко за словесными горами в стране гласных, и согласных живут рыбные тексты.
-                        .reviews__person
-                            .person__name Ковальчук Дмитрий
-                            .person__position - основатель Loftschool
-                .reviews__right
-                    .rewiews__description
-                        .rewiews__description
-                        .reviews__img
-                            img(src="../../assets/images/img/sd.png", alt="")
-                        .reviews__text Далеко-далеко за словесными горами в стране гласных, и согласных живут рыбные тексты. Далеко-далеко за словесными горами в стране гласных, и согласных живут рыбные тексты.
-                        .reviews__person
-                            .person__name Сабанцев Владимир
-                            .person__position - преподаватель
-            .about-me__form
-                .about-me-form__wrap
-                        .about-me-form__title
-                            .block-title__title.block-title__title-color-gray.block-title__title-smoller Связаться со мной
-                        form(action="#" method="post").about-me-form
-                            label.about-me-form__name
-                                input(type="text" name="name" id="name" placeholder="Имя")
-                            label.about-me-form__email
-                                input(type="email" name="email" id="email" placeholder="email")
-                            label.about-me-form__textarea
-                                textarea(name="textarea", cols="30", rows="10", id="textarea", placeholder="Ваше сообщение")
-                            ul.button-login
-                                li.button-login__item
-                                    button Отправить
-                                li.button-login__item
-                                    button Очистить
+            include ../common/reviews.pug
+            include ../common/my-works-form.pug
     include ../common/footer.pug
 
