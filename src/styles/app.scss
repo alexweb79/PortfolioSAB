@@ -16,7 +16,7 @@ html {
 }
 
 div {
-    // border: 1px #ff0000 solid;
+    border: 1px #ff0000 solid;
 }
 
 @import 'common/welcome';
@@ -24,6 +24,7 @@ div {
 @import 'common/header';
 @import 'common/social';
 @import 'common/triangle';
+@import 'common/block-title';
 @import 'common/my-works';
 // @import 'common/slider';
 @import 'common/about';

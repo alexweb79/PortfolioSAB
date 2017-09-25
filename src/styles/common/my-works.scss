@@ -1,4 +1,157 @@
-.my-works {
+.slider {
     display: flex;
     flex-direction: row;
+}
+
+.slider__left {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #EBEFE1;
+}
+
+.slider__right {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+.sites-description__technology-set {
+    color: #669966;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.sites-link__sites-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #669966;
+    border-radius: 50px;
+    margin-top: 40px;
+}
+
+.sites-button__link {
+    display: block;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 15px 10px 0px;
+    &:before {
+        content: "";
+        background-image: url('../../assets/images/icons/link.svg');
+        background-repeat: no-repeat;
+        background-position: top center;
+        width: 20px;
+        height: 20px;
+        padding: 0 40px 0 0;
+    }
+}
+
+.slider__right {
+    display: flex;
+    flex-direction: column;
+}
+
+.sites__img {}
+
+.sites__button {
+    display: flex;
+    flex-direction: row;
+}
+
+.sites-button-left {
+    flex-basis: 50%;
+    background-image: url('../../assets/images/icons/portf_arrow_down.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+}
+
+.sites-button-right {
+    flex-basis: 50%;
+    background-image: url('../../assets/images/icons/portf_arrow_up.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    // justify-content: flex-start;
+    align-items: center;
+    min-height: 1000px;
+    background-image: url('../../assets/images/img/bg-about-me.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.abut-me__title {
+    background-image: url('../../assets/images/img/list2.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    width: 100%;
+}
+
+.about-me__reviews {
+    display: flex;
+    flex-direction: row;
+}
+
+.reviews__left {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.reviews__right {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.rewiews__description {
+    width: 70%;
+    background-image: url('../../assets/images/img/quotes.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.reviews__img {
+    text-align: center;
+}
+
+.reviews__text {
+    color: #82817C;
+    margin-top: 10px;
+}
+
+.reviews__person {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.person__name {
+    font-weight: 600;
+    color: #669966;
+}
+
+.person__position {
+    color: #585855;
+}
+
+.about-me-form__wrap {
+    // width: 100%;
+    margin-top: 40px;
+    // margin-bottom: 200px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.about-me-form {
+    display: flex;
+    flex-direction: column;
 }

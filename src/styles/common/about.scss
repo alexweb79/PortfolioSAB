@@ -12,7 +12,7 @@ section.about {
     display: flex;
     flex-direction: column;
     // justify-content: center;
-    align-items: center;
+    // align-items: center;
     background-color: #EBEFE1;
 }
 
@@ -21,33 +21,12 @@ section.about {
 }
 
 .about__left-title {
-    display: flex;
-    justify-content: center;
-    // min-height: 175px;
-    background-image: url('../../assets/images/icons/about_header.svg');
-    background-repeat: no-repeat;
-    background-position: top;
-    // background-size: cover;
     width: 100%;
     margin-top: -30px;
-    // height: 300px;
 }
 
-.block-title {
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
-    // justify-content: center;
-    // max-width: 500px;
-    margin-top: 60px;
-}
-
-.welcome-center__title_color-black {
-    // margin-top: 60px;
-    font-size: 5rem;
-    &::after {
-        background-color: black;
-    }
+.about__left-title>.block-title>.block-title__bg-about-me {
+    padding-top: 60px;
 }
 
 .about__left-content {
@@ -85,22 +64,6 @@ section.about {
 .text-content {
     // max-width: 400px;
     padding: 0 50px;
-}
-
-.welcome-center__title-block-subtitle {
-    font-size: 2rem;
-    text-transform: uppercase;
-    font-weight: 600;
-    color: #4B574D;
-    text-align: center;
-    &::after {
-        content: "";
-        display: block;
-        width: 7rem;
-        height: 3px;
-        margin: 20px auto;
-        background-color: #4B574D;
-    }
 }
 
 .about__right-content {}

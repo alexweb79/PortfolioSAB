@@ -7,25 +7,6 @@ $darkcolorgreen: #336633;
     padding: 0 40px;
 }
 
-.welcome-center__title {
-    font-family: 'Sansus-Webissimo-Regular', sans-serif;
-    font-size: 2rem;
-    text-transform: uppercase;
-    font-weight: 600;
-    &::after {
-        content: "";
-        display: block;
-        width: 7rem;
-        height: 3px;
-        background-color: $colorwhite;
-        margin: 20px auto;
-    }
-}
-
-// .welcome-center__welcome-form {
-//     display: flex;
-//     flex-direction: column;
-// }
 .welcome-form {
     display: flex;
     flex-direction: column;
