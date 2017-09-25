@@ -11,8 +11,6 @@ section.about {
 .about__left {
     display: flex;
     flex-direction: column;
-    // justify-content: center;
-    // align-items: center;
     background-color: #EBEFE1;
 }
 
@@ -62,7 +60,6 @@ section.about {
 }
 
 .text-content {
-    // max-width: 400px;
     padding: 0 50px;
 }
 
@@ -71,7 +68,6 @@ section.about {
 section.section.map {
     display: flex;
     flex-direction: column;
-    // align-items: flex-end;
     justify-content: flex-end;
     position: relative;
 }
@@ -109,10 +105,6 @@ section.section.map {
     display: flex;
     flex-direction: row;
     margin-top: 15px;
-}
-
-.contacts-row__icon {
-    // padding: 5px;
 }
 
 .contacts-row__content {

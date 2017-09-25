@@ -80,7 +80,6 @@
 .about-me {
     display: flex;
     flex-direction: column;
-    // justify-content: flex-start;
     align-items: center;
     min-height: 1000px;
     background-image: url('../../assets/images/img/bg-about-me.png');
@@ -144,9 +143,7 @@
 }
 
 .about-me-form__wrap {
-    // width: 100%;
     margin-top: 40px;
-    // margin-bottom: 200px;
     padding: 30px;
     background-color: rgba(255, 255, 255, 0.5);
 }
