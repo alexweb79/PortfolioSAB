@@ -17,7 +17,8 @@ label {
 }
 
 input[type="text"],
-input[type="password"] {
+input[type="password"],
+input[type="email"] {
     width: 20rem;
     height: 3rem;
     font-size: 1rem;
@@ -26,6 +27,16 @@ input[type="password"] {
     padding-left: 50px;
     border: none;
     border-radius: 50px;
+}
+
+textarea[name="textarea"] {
+    width: 20rem;
+    height: 9rem;
+    font-size: 1rem;
+    margin: 10px 20px;
+    padding: 10px 0 0 50px;
+    border: none;
+    border-radius: 20px;
 }
 
 .welcome-form__password::before,
@@ -181,6 +192,7 @@ input[type="checkbox"]:checked+.welcome-form__label-text:before {
     flex-basis: 50%;
     align-content: stretch;
     border-right: 2px solid $lightcolorgreen;
+    margin-top: 10px;
     &:last-child {
         border-right-width: 0px;
     }

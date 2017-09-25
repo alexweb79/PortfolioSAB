@@ -54,7 +54,13 @@
     flex-direction: column;
 }
 
-.sites__img {}
+.sites__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E2E4D7;
+    padding: 100px 0;
+}
 
 .sites__button {
     display: flex;
@@ -63,17 +69,38 @@
 
 .sites-button-left {
     flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
     background-image: url('../../assets/images/icons/portf_arrow_down.svg');
     background-repeat: no-repeat;
     background-position: center center;
-    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    position: relative;
 }
 
 .sites-button-right {
     flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
     background-image: url('../../assets/images/icons/portf_arrow_up.svg');
     background-repeat: no-repeat;
     background-position: center center;
+    background-color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    position: relative;
+}
+
+.sites-button-left__img-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    padding: 10px;
     width: 100%;
 }
 
@@ -93,6 +120,7 @@
     background-repeat: no-repeat;
     background-position: left center;
     width: 100%;
+    padding-top: 40px;
 }
 
 .about-me__reviews {
@@ -142,13 +170,34 @@
     color: #585855;
 }
 
+.about-me__form {
+    width: 100%;
+    margin-bottom: 400px;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    background-image: url('../../assets/images/img/list3.png');
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
 .about-me-form__wrap {
-    margin-top: 40px;
-    padding: 30px;
+    padding-top: 20px;
     background-color: rgba(255, 255, 255, 0.5);
 }
 
 .about-me-form {
     display: flex;
     flex-direction: column;
+    &:before {
+        content: "";
+        display: block;
+        width: 58px;
+        height: 108px;
+        position: absolute;
+        margin-left: -350px;
+        background-image: url('../../assets/images/img/list1.png');
+        background-repeat: no-repeat;
+        background-position: left top;
+    }
 }
