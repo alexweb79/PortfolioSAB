@@ -1,15 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const hamb = document.querySelector(".hamburger");
-    const menu = document.querySelector(".block__main-menu");
+    var hamb = document.querySelector(".hamburger");
+    var hidden = document.querySelector(".hidden");
     hamb.addEventListener("click", function() {
         hamb.classList.add("is-active");
-        document.getElementsByClassName('block__main-menu')[0].style = "visibility: visible";
+        hidden.classList.add("visible");
 
-        const hambActive = document.querySelector(".is-active");
         hamb.addEventListener("click", function() {
-            hamb.classList.remove("is-active");
-            document.getElementsByClassName('block__main-menu')[0].style = "visibility: hidden";
+            hamb.classList.toggle("is-active");
+            hidden.classList.toggle("visible");
         });
     });
-
 });
