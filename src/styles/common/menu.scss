@@ -40,4 +40,29 @@
 .main-menu__link {
     color: #333333;
     text-decoration: none;
+    &:hover {
+        &:before,
+        &:after {
+            content: '';
+            display: inline-block;
+            vertical-align: middle;
+            box-sizing: border-box;
+            width: 100px;
+            height: 10px;
+            background: #333333;
+            margin: 0 20px;
+            animation-name: move;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+        }
+    }
+}
+
+@keyframes move {
+    from {
+        transform: scaleX(0)
+    }
+    to {
+        transform: scaleX(1.0)
+    }
 }
