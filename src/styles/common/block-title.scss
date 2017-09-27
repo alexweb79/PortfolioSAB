@@ -1,6 +1,13 @@
 .block-title {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+}
+
+.block-title__blog-page {
+    margin-top: 30px;
+    // margin-top: -250px;
+    // margin-bottom: 70px;
 }
 
 .block-title__bg-my-works {
@@ -67,4 +74,16 @@
     &:after {
         width: 5rem;
     }
+}
+
+.block-title__description-color-black {
+    color: #333333;
+}
+
+.block-title__description-color-gray {
+    color: #4B574D;
+}
+
+.block-title__description-color-white {
+    color: #FFFFFF;
 }
