@@ -17,15 +17,15 @@ block content
                 include ../common/social.pug           
                 div.button-welcome-fix-fontsize
                     ul.button-welcome
-                    - 
-                        var buttons = [
-                            ['Мои работы', '/my-works.html'],
-                            ['Обо мне', '/about.html'],
-                            ['Блог', '/blog.html'],
-                        ]
-                    each button in buttons
-                        li.button-welcome__item
-                            a(href=`${button[1]}`) #{button[0]}
+                        - 
+                            var buttons = [
+                                ['Мои работы', '/my-works.html'],
+                                ['Обо мне', '/about.html'],
+                                ['Блог', '/blog.html'],
+                            ]
+                        each button in buttons
+                            li.button-welcome__item
+                                a(href=`${button[1]}`) #{button[0]}
         .back.hidden.flipInY
             div.welcome-center
                 div.welcome-center__wrap-title
@@ -55,3 +55,4 @@ block content
                             button Войти
         div.welcome-footer
             p.welcome-footer__copyright &copy; Александр Смирнов | LoftSchool 2017
+                

@@ -4,8 +4,10 @@
 const hamburger = require('./common/hamburger');
 const flip = require('./common/flip');
 const arrowDown = require('./common/arrowDown');
+// const water = require('./common/water');
 
 //slider(); // инициализируем слайдер
 hamburger();
 flip();
 arrowDown();
+// water();

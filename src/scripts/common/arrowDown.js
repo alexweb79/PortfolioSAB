@@ -1,6 +1,6 @@
-document.addEventListener('DOMContentLoaded', function() {
-    var arrowDown = document.getElementById('arrowDown');
-    arrowDown.addEventListener("click", function() {
+// document.addEventListener('DOMContentLoaded', function() {
+//     var arrowDown = document.getElementById('arrowDown');
+//     arrowDown.addEventListener("click", function() {
 
-    });
-});
+//     });
+// });
