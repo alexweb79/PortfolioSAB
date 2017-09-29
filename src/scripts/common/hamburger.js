@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    var hamb = document.getElementsByClassName(".hamburger"),
+    var hamb = document.querySelector(".hamburger"),
         hidden = document.querySelector(".hidden"),
         fadeIn = document.querySelector(".hidden");
     hamb.addEventListener("click", function() {

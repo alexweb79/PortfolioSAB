@@ -23,11 +23,18 @@ body {
 //     color: #fff;
 // }
 .Background {
+    background-image: url('/assets/images/img/bg-welcome.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    // width: 100%;
+    // height: 100%;
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
+    overflow: hidden;
 }
 
 .Background::after {
@@ -35,7 +42,5 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), transparent 50%, rgba(0, 0, 0, 0.5));
 }
