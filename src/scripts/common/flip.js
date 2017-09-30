@@ -1,5 +1,5 @@
 ;
-document.addEventListener('DOMContentLoaded', function() {
+window.addEventListener('DOMContentLoaded', function() {
     var hamb = document.querySelector(".flip-button"),
         front = document.querySelector(".front"),
         back = document.querySelector(".back");
