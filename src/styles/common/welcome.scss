@@ -24,6 +24,9 @@
     align-items: flex-start;
     align-self: flex-end;
     margin: 20px;
+    @include phones {
+        align-self: center;
+    }
 }
 
 .welcome-login__btn {
@@ -45,6 +48,9 @@
     font-weight: bold;
     color: #FFFFFF;
     text-decoration: none;
+    @include phones {
+        font-size: 1.5rem;
+    }
 }
 
 .welcome-center {

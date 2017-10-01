@@ -1,6 +1,9 @@
 .slider {
     display: flex;
     flex-direction: row;
+    @include phones {
+        flex-direction: column-reverse;
+    }
 }
 
 .slider__left {

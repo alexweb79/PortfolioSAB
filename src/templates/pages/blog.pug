@@ -16,12 +16,13 @@ block content
         .block-title__title.block-title__title-color-black.block-title__title-bigger Блог
         .block-title__title.block-title__description-color-gray Статьи, которые я написал
     section.section.blog
+        include ../common/menu-left.pug
         aside.aside.blog__left-col
             .left-col__blog-menu
                 ul.blog-menu__list
                     each item in ['Самое важное в SASS', 'Приемы в верстке, без которых не обходится ни один сайт', 'Самый необходимый набор Gulp плагинов', 'Почему я выбрал Jade']
-                        li.blog-menu___item
-                            a(href="#").blog-menu__link #{item}
+                        li.blog-menu___item.blog-menu___item-color-white
+                            a(href="#").blog-menu__link.blog-menu__link-color-gray #{item}
         article.article.blog__right-col
             ul.article__list
                 li.article__item

@@ -1,5 +1,8 @@
 .menu-footer {
     display: flex;
+    @include phones {
+        justify-content: center;
+    }
 }
 
 .menu-footer__list {

@@ -10,12 +10,14 @@
     // margin-bottom: 70px;
 }
 
+// .block-title__bg-wrap {
+//     padding: 20px;
+// }
 .block-title__bg-my-works {
     background-image: url('../../assets/images/icons/works_header.svg');
     background-repeat: no-repeat;
     background-position: top center;
-    // background-size: cover;
-    // max-width: 100%;
+    background-size: contain;
     width: 100%;
     padding-top: 60px;
 }
@@ -24,6 +26,7 @@
     background-image: url('../../assets/images/icons/about_header.svg');
     background-repeat: no-repeat;
     background-position: top center;
+    background-size: contain;
     width: 100%;
     padding-top: 30px;
 }
@@ -73,6 +76,9 @@
     font-size: 2rem;
     &:after {
         width: 5rem;
+    }
+    @include phones {
+        font-size: 3rem;
     }
 }
 

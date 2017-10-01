@@ -1,0 +1,73 @@
+.hidden-menu {
+    display: none;
+    position: fixed;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    box-sizing: border-box;
+    width: 90%;
+    background-color: rgba(102, 153, 102, 0.9);
+    height: 100%;
+    top: 0;
+    left: -100%;
+    transition: left .2s;
+    z-index: 2;
+    @include phones {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 40px;
+    }
+}
+
+.hidden-menu-ticker {
+    display: none;
+}
+
+.btn-menu {
+    // color: #fff;
+    // background-color: rgba(102, 153, 102, 0.9);
+    // margin: auto 0;
+    padding: 7px;
+    position: fixed;
+    top: 50%;
+    left: 0px;
+    cursor: pointer;
+    transition: left .23s;
+    z-index: 3;
+    width: 15px;
+    height: 60px;
+}
+
+.hidden-menu-ticker:checked~.btn-menu {
+    left: 90%;
+}
+
+.hidden-menu-ticker:checked~.hidden-menu {
+    left: 0;
+}
+
+.circle {
+    overflow: hidden;
+    display: none;
+    // position: relative;
+    height: 60px;
+    width: 10px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50" fill="rgba(102, 153, 102, 0.9)"/></svg>') 0 0 / cover no-repeat;
+    background-position: 100% 0;
+    @include phones {
+        display: inline-block;
+    }
+}
+
+.circle:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 60px;
+    border-radius: 100%;
+    // background: rgba(102, 153, 102, 0.5);
+    // box-shadow: 0 0 1px 1px rgba(102, 153, 102, 0.5);
+}

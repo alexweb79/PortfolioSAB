@@ -1,6 +1,15 @@
+.about__triangle .triangle_fill_white {
+    @include phones {
+        fill: #ebefe2;
+    }
+}
+
 section.about {
     display: flex;
     flex-direction: row;
+    @include phones {
+        flex-direction: column;
+    }
 }
 
 .about__left,
@@ -16,6 +25,9 @@ section.about {
 
 .about__right {
     background-color: #FFFFFF;
+    @include phones {
+        padding-top: 20px;
+    }
 }
 
 .about__left-title {
@@ -47,6 +59,7 @@ section.about {
 .user-description__title {
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 }
 
 .user-description__avatar {
@@ -81,16 +94,24 @@ section.section.map {
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
+    @include phones {
+        align-items: flex-start;
+    }
 }
 
 .map__contacts {
     display: block;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.8);
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 20px;
     border-radius: 5px;
     margin-top: -194px;
+    @include phones {
+        width: 100%;
+        margin-top: 0;
+        font-size: 1.7rem;
+    }
 }
 
 .contacts__title {
@@ -107,6 +128,21 @@ section.section.map {
     margin-top: 15px;
 }
 
+.contacts-row__icon img {
+    width: 25px;
+    @include phones {
+        width: 30px;
+    }
+}
+
 .contacts-row__content {
+    display: flex;
+    align-items: center;
     padding-left: 15px;
+}
+
+.text-content p {
+    @include phones {
+        font-size: 1.5rem;
+    }
 }

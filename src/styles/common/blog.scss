@@ -17,18 +17,31 @@
 }
 
 .aside {
-    flex-basis: 33%
+    flex-basis: 33%;
+    @include phones {
+        display: none;
+    }
 }
 
 .article {
     flex-basis: 66%;
+    @include phones {
+        flex-basis: 90%;
+        padding: 0 20px;
+    }
 }
 
 .blog__left-col {}
 
 .blog__right-col {}
 
-.article__list {}
+.article__list {
+    padding-right: 20px;
+    @include phones {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+}
 
 .article__item {
     border-bottom: 5px solid #ecebe4;
@@ -51,10 +64,15 @@
     color: #81a970;
 }
 
-.article__text {}
+.article__text img {
+    max-width: 100%;
+}
 
 .left-col__blog-menu {
     margin: 0 40px 0 20px;
+    @include phones {
+        margin: 0 5px;
+    }
 }
 
 .blog-menu__list {}
@@ -64,8 +82,11 @@
     align-items: center;
     justify-content: flex-end;
     list-style-type: none;
-    border-right: 3px solid white;
     margin-bottom: 20px;
+}
+
+.blog-menu___item-color-white {
+    border-right: 3px solid white;
     &:hover,
     &:active,
     &:first-child {
@@ -73,13 +94,34 @@
     }
 }
 
+.blog-menu___item-color-green {
+    border-right: 3px solid #6c9c5a;
+    &:hover,
+    &:active,
+    &:first-child {
+        border-right: 3px solid white;
+    }
+}
+
 .blog-menu__link {
-    color: gray;
     text-decoration: none;
     text-align: right;
     padding: 5px 10px;
+}
+
+.blog-menu__link-color-gray {
+    color: gray;
     &:active,
     &:hover {
         color: #6c9c5a;
+    }
+}
+
+.blog-menu__link-color-white {
+    font-size: 1.5rem;
+    color: white;
+    &:active,
+    &:hover {
+        color: #c4c4c4;
     }
 }

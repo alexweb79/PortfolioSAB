@@ -1,5 +1,6 @@
 @import "normalize";
 @import "common/fonts";
+@import "common/mixin";
 body,
 html {
     font-family: "RobotoRegular", sans-serif;
@@ -7,6 +8,18 @@ html {
     font-weight: 400;
     font-style: normal;
     height: 100vh;
+    @include desktop {
+        font-size: 16px;
+    }
+    @include laptop {
+        font-size: 15px;
+    }
+    @include tablets {
+        font-size: 14px;
+    }
+    @include phones {
+        font-size: 13px;
+    }
 }
 
 .wrapper {
@@ -35,6 +48,7 @@ div {
 @import 'common/reviews';
 @import 'common/my-works-form';
 @import 'common/about';
+@import 'common/menu-left';
 @import 'common/skills';
 // @import 'common/technologies';
 @import 'common/blog';

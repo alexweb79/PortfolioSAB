@@ -7,16 +7,24 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
     color: white;
     padding-top: 20px;
+    @include phones {
+        min-height: 450px;
+    }
+}
+
+.hero__social-and-menu {
+    display: flex;
+    flex-direction: row;
 }
 
 .hero__socials {
     display: flex;
     justify-content: flex-start;
     flex-wrap: nowrap;
-    flex-basis: 20%;
+    flex-basis: 50%;
     padding-left: 15px;
 }
 
@@ -26,7 +34,7 @@
 }
 
 .hero__title {
-    flex-basis: 50%;
+    // flex-basis: 50%;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -43,6 +51,7 @@
     justify-content: center;
     align-items: center;
     z-index: 0;
+    margin-bottom: 30px;
 }
 
 .arrow-down img {
