@@ -29,3 +29,33 @@
         background-position: left top;
     }
 }
+
+.textfield__error-message,
+.textarea__error-message {
+    &:after {
+        content: "* ERROR";
+        display: none;
+        color: red;
+        border: 1px solid red;
+    }
+}
+
+.textfield_state_error,
+.textarea_state_error {
+    content: "";
+    display: block;
+    color: red;
+    border: 1px solid red;
+}
+
+.form-message {
+    display: none;
+}
+
+.form-message__text {}
+
+.form-message__close {}
+
+.form-message_active {
+    display: block;
+}

@@ -75,6 +75,14 @@
     }
 }
 
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-left: -40px;
+    width: 33%;
+}
+
 .blog-menu__list {}
 
 .blog-menu___item {
@@ -83,6 +91,11 @@
     justify-content: flex-end;
     list-style-type: none;
     margin-bottom: 20px;
+}
+
+nav>li>a.active {
+    background-color: red;
+    border: 1px solid red;
 }
 
 .blog-menu___item-color-white {

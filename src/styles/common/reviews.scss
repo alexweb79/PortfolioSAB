@@ -9,6 +9,7 @@
 .reviews__left {
     flex-basis: 50%;
     display: flex;
+    margin-top: 20px;
     justify-content: flex-end;
     @include phones {
         justify-content: center;
@@ -18,6 +19,7 @@
 .reviews__right {
     flex-basis: 50%;
     display: flex;
+    margin-top: 20px;
     justify-content: flex-start;
     @include phones {
         justify-content: center;

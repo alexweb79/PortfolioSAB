@@ -27,7 +27,9 @@
 
 .main-menu {}
 
-.main-menu__list {}
+.main-menu__list {
+    padding-left: 0;
+}
 
 .main-menu__item {
     font-family: 'Sansus-Webissimo-Regular';
@@ -35,6 +37,9 @@
     list-style-type: none;
     text-align: center;
     margin: 15px;
+    @include phones {
+        font-size: 4rem;
+    }
 }
 
 .main-menu__link {
@@ -54,6 +59,9 @@
             animation-name: move;
             animation-duration: 0.5s;
             animation-iteration-count: 1;
+            @include phones {
+                width: 30px;
+            }
         }
     }
 }
