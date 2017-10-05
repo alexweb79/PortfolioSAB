@@ -1,0 +1,57 @@
+.about-me__reviews {
+    display: flex;
+    flex-direction: row;
+    @include phones {
+        flex-direction: column;
+    }
+}
+
+.reviews__left {
+    flex-basis: 50%;
+    display: flex;
+    margin-top: 20px;
+    justify-content: flex-end;
+    @include phones {
+        justify-content: center;
+    }
+}
+
+.reviews__right {
+    flex-basis: 50%;
+    display: flex;
+    margin-top: 20px;
+    justify-content: flex-start;
+    @include phones {
+        justify-content: center;
+    }
+}
+
+.rewiews__description {
+    width: 70%;
+    background-image: url('../../assets/images/img/quotes.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.reviews__img {
+    text-align: center;
+}
+
+.reviews__text {
+    color: #82817C;
+    margin-top: 10px;
+}
+
+.reviews__person {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.person__name {
+    font-weight: 600;
+    color: #669966;
+}
+
+.person__position {
+    color: #585855;
+}

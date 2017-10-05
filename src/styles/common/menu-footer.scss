@@ -1,5 +1,8 @@
 .menu-footer {
     display: flex;
+    @include phones {
+        justify-content: center;
+    }
 }
 
 .menu-footer__list {
@@ -16,6 +19,7 @@
     color: #FFFFFF;
     text-decoration: none;
     margin-right: 20px;
+    white-space: nowrap;
     &:hover {
         text-decoration: underline;
     }

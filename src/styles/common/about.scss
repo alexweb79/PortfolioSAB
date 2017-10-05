@@ -1,6 +1,15 @@
+.about__triangle .triangle_fill_white {
+    @include phones {
+        fill: #ebefe2;
+    }
+}
+
 section.about {
     display: flex;
     flex-direction: row;
+    @include phones {
+        flex-direction: column;
+    }
 }
 
 .about__left,
@@ -11,43 +20,23 @@ section.about {
 .about__left {
     display: flex;
     flex-direction: column;
-    // justify-content: center;
-    align-items: center;
     background-color: #EBEFE1;
 }
 
 .about__right {
     background-color: #FFFFFF;
+    @include phones {
+        padding-top: 20px;
+    }
 }
 
 .about__left-title {
-    display: flex;
-    justify-content: center;
-    // min-height: 175px;
-    background-image: url('../../assets/images/icons/about_header.svg');
-    background-repeat: no-repeat;
-    background-position: top;
-    // background-size: cover;
     width: 100%;
     margin-top: -30px;
-    // height: 300px;
 }
 
-.block-title {
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
-    // justify-content: center;
-    // max-width: 500px;
-    margin-top: 60px;
-}
-
-.welcome-center__title_color-black {
-    // margin-top: 60px;
-    font-size: 5rem;
-    &::after {
-        background-color: black;
-    }
+.about__left-title>.block-title>.block-title__bg-about-me {
+    padding-top: 60px;
 }
 
 .about__left-content {
@@ -70,6 +59,7 @@ section.about {
 .user-description__title {
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 }
 
 .user-description__avatar {
@@ -83,24 +73,7 @@ section.about {
 }
 
 .text-content {
-    // max-width: 400px;
     padding: 0 50px;
-}
-
-.welcome-center__title-block-subtitle {
-    font-size: 2rem;
-    text-transform: uppercase;
-    font-weight: 600;
-    color: #4B574D;
-    text-align: center;
-    &::after {
-        content: "";
-        display: block;
-        width: 7rem;
-        height: 3px;
-        margin: 20px auto;
-        background-color: #4B574D;
-    }
 }
 
 .about__right-content {}
@@ -108,7 +81,6 @@ section.about {
 section.section.map {
     display: flex;
     flex-direction: column;
-    // align-items: flex-end;
     justify-content: flex-end;
     position: relative;
 }
@@ -122,16 +94,24 @@ section.section.map {
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
+    @include phones {
+        align-items: flex-start;
+    }
 }
 
 .map__contacts {
     display: block;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.8);
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 20px;
     border-radius: 5px;
     margin-top: -194px;
+    @include phones {
+        width: 100%;
+        margin-top: 0;
+        font-size: 1.7rem;
+    }
 }
 
 .contacts__title {
@@ -148,10 +128,21 @@ section.section.map {
     margin-top: 15px;
 }
 
-.contacts-row__icon {
-    // padding: 5px;
+.contacts-row__icon img {
+    width: 25px;
+    @include phones {
+        width: 30px;
+    }
 }
 
 .contacts-row__content {
+    display: flex;
+    align-items: center;
     padding-left: 15px;
+}
+
+.text-content p {
+    @include phones {
+        font-size: 1.5rem;
+    }
 }

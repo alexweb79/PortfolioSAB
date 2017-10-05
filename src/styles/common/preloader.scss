@@ -1,0 +1,60 @@
+.preloader {
+    height: 100%;
+    width: 100%;
+    background-image: url('../images/img/forest_prel_bg.jpg');
+    background-position: center center;
+    background-size: cover;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10000;
+    perspective: 1600px;
+    perspective-origin: 20% 50%;
+    transition: 0.5s all;
+}
+
+.spinner {
+    border: 2px solid #6c9c5a;
+    border-top: 3px solid #fff;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.sp1 {
+    width: 80px;
+    height: 80px;
+    animation: spin1 1s infinite linear;
+}
+
+.sp2 {
+    width: 65px;
+    height: 65px;
+    animation: spin2 1s infinite linear;
+}
+
+.preloader.fade {
+    opacity: 0;
+}
+
+@keyframes spin1 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin2 {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}

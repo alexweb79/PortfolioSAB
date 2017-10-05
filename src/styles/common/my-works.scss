@@ -1,4 +1,18 @@
-.my-works {
+.about-me {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    min-height: 1000px;
+    background-image: url('../../assets/images/img/bg-about-me.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.abut-me__title {
+    background-image: url('../../assets/images/img/list2.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    width: 100%;
+    padding-top: 40px;
 }

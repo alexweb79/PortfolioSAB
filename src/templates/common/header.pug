@@ -1,6 +1,8 @@
 section.section.hero
-        .hero__socials
-            include ../common/social.pug
+        .hero__social-and-menu
+            .hero__socials
+                include ../common/social.pug
+            include ../common/hamburger.pug
         .hero__title
             .section-title
             .user.hero__user
@@ -9,8 +11,8 @@ section.section.hero
                 .user__description
                     .user__name.welcome-center__name Александр Смирнов
                     .user__info.welcome-center__option Личный сайт разработчика
-        .hamburger.hero__menu
-            img(src="assets/images/icons/hamburger.svg", alt="Меню" title="Меню")
+        
         .arrow-down.hero__scroll-btn
-            img(src="assets/images/icons/arrow_down.svg", alt="arrow_down" title="arrow_down")
+            a(href="#blockDown")
+                img(src="assets/images/icons/arrow_down.svg", alt="arrow_down" title="arrow_down")#arrowDown
         

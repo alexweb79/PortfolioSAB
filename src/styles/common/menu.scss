@@ -1,31 +1,92 @@
 .block__main-menu {
     position: absolute;
+    left: 0;
+    top: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    // background-color: rgba(102, 153, 102, 0.9);
     background-image: url('../images/img/forest_prel_bg.jpg');
     background-position: center center;
     background-size: cover;
     width: 100%;
     height: 100vh;
+    z-index: 1;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible;
 }
 
 .x {}
 
 .main-menu {}
 
-.main-menu__list {}
+.main-menu__list {
+    padding-left: 0;
+}
 
 .main-menu__item {
     font-family: 'Sansus-Webissimo-Regular';
-    font-size: 7rem;
+    font-size: 5rem;
     list-style-type: none;
     text-align: center;
     margin: 15px;
+    @include phones {
+        font-size: 4rem;
+    }
 }
 
 .main-menu__link {
     color: #333333;
     text-decoration: none;
+    &:hover {
+        &:before,
+        &:after {
+            content: '';
+            display: inline-block;
+            vertical-align: middle;
+            box-sizing: border-box;
+            width: 50px;
+            height: 5px;
+            background: #333333;
+            margin: 0 20px;
+            animation-name: move;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+            @include phones {
+                width: 30px;
+            }
+        }
+    }
+}
+
+@keyframes move {
+    from {
+        transform: scaleX(0)
+    }
+    to {
+        transform: scaleX(1.0)
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    // animation-fill-mode: both;
+    animation-iteration-count: 1;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }

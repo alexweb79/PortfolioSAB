@@ -3,39 +3,36 @@ extends ../template
 block variables
     - var title = 'Обо мне'
 
-block content
-    //- ul.test-list
-    //-     each item in another.skills
-    //-         li
-    //-             h1 #{item}
-
-    //- h2 #{skills.about}
-
+block content    
     include ../common/header.pug
-    .triangle
-        .triangle__left
-            svg(width="100%" height="100" viewBox="0 0 900.006 164.986" preserveAspectRatio="none")
-                path(d="M0.01,0l899.997,159.008v854.979H0L0.01,0z").triangle_fill_beige
-        .triangle__right
-            svg(width="100%" height="100" viewBox="0 0 900.006 160.986" preserveAspectRatio="none")
-                path(d="M0,155.008L900.331,0l-0.005,1009.986H0V155.008z").triangle_fill_white
-    section.section.about
+    .about__triangle
+        .triangle
+            .triangle__left
+                svg(width="100%" height="100" viewBox="0 0 900.006 164.986" preserveAspectRatio="none")
+                    path(d="M0.01,0l899.997,159.008v854.979H0L0.01,0z").triangle_fill_beige
+            .triangle__right
+                svg(width="100%" height="100" viewBox="0 0 900.006 160.986" preserveAspectRatio="none")
+                    path(d="M0,155.008L900.331,0l-0.005,1009.986H0V155.008z").triangle_fill_white
+    section.section.about#blockDown
         .about__left
             .about__left-title
-                .block-title.welcome-center__title.welcome-center__title_color-black Обо мне
+                .block-title
+                    .block-title__bg-wrap
+                        .block-title__bg-about-me
+                            .block-title__title.block-title__title-color-black.block-title__title-bigger Обо мне
             .about__left-content
                 .user-description
                     .user-description__image
                         img(src="assets/images/img/NY.jpg", alt="" title="").user-description__avatar
                     .user-description__title
-                        .block-subtitle.welcome-center__title.welcome-center__title_color-black.welcome-center__title-block-subtitle Кто я
+                        .block-title__title.block-title__title-color-gray.block-title__title-smoller Кто я
                     .user-description__text
                         .text-content
                             p Я веб-разработчик из Твери. Мне 38 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
                             p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
         .about__right
             .about__right-title
-                .block-subtitle.welcome-center__title.welcome-center__title_color-black.welcome-center__title-block-subtitle Чем я могу быть<br> вам полезен
+                .block-title__title.block-title__title-color-gray.block-title__title-smoller Чем я могу быть<br> вам полезен
             .about__right-text
                 .text-content
                     p Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
@@ -46,7 +43,7 @@ block content
             .map__contacts
                 .contacts
                     .contacts__title
-                        .block-subtitle.welcome-center__title.welcome-center__title_color-black.welcome-center__title-block-subtitle Контакты
+                        .block-title__title.block-title__title-color-gray.block-title__title-smoller Контакты
                     ul.contacts__list
                     - 
                         var contacts = [
@@ -60,5 +57,6 @@ block content
                         .contacts-row
                             .contacts-row__icon
                                 img(src=`/assets/images/icons/${contact[0]}`)
-                            .contacts-row__content #{contact[1]}
+                            .contacts-row__content
+                                .contacts-row__content-text #{contact[1]}
     include ../common/footer.pug
