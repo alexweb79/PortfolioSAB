@@ -1,5 +1,5 @@
 .about__triangle .triangle_fill_white {
-    @include phones {
+    @include tablets {
         fill: #ebefe2;
     }
 }
@@ -7,7 +7,7 @@
 section.about {
     display: flex;
     flex-direction: row;
-    @include phones {
+    @include tablets {
         flex-direction: column;
     }
 }
@@ -25,7 +25,7 @@ section.about {
 
 .about__right {
     background-color: #FFFFFF;
-    @include phones {
+    @include tablets {
         padding-top: 20px;
     }
 }
@@ -94,7 +94,7 @@ section.section.map {
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
-    @include phones {
+    @include tablets {
         align-items: flex-start;
     }
 }
@@ -107,7 +107,7 @@ section.section.map {
     padding-bottom: 20px;
     border-radius: 5px;
     margin-top: -194px;
-    @include phones {
+    @include tablets {
         width: 100%;
         margin-top: 0;
         font-size: 1.7rem;
@@ -130,7 +130,7 @@ section.section.map {
 
 .contacts-row__icon img {
     width: 25px;
-    @include phones {
+    @include tablets {
         width: 30px;
     }
 }
@@ -142,7 +142,7 @@ section.section.map {
 }
 
 .text-content p {
-    @include phones {
+    @include tablets {
         font-size: 1.5rem;
     }
 }

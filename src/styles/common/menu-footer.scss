@@ -1,6 +1,6 @@
 .menu-footer {
     display: flex;
-    @include phones {
+    @include tablets {
         justify-content: center;
     }
 }

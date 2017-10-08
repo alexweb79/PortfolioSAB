@@ -20,7 +20,7 @@
     color: #666666;
     font-size: 1.2rem;
     font-weight: 600;
-    @include phones {
+    @include tablets {
         text-align: center;
         font-size: 1.5rem;
     }
@@ -35,7 +35,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     list-style-type: none;
-    @include phones {
+    @include tablets {
         justify-content: center;
     }
 }
@@ -64,7 +64,7 @@
     font-weight: 600;
     color: #669966;
     text-align: center;
-    @include phones {
+    @include tablets {
         font-size: 1.1rem;
     }
 }

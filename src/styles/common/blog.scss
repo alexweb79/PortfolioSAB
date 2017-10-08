@@ -37,7 +37,7 @@
 
 .article__list {
     padding-right: 20px;
-    @include phones {
+    @include tablets {
         padding-right: 5px;
         padding-left: 5px;
     }
@@ -51,6 +51,9 @@
     &:last-child {
         border: none;
         margin-bottom: 200px;
+        @include tablets {
+            margin-bottom: 300px;
+        }
     }
 }
 
@@ -70,7 +73,7 @@
 
 .left-col__blog-menu {
     margin: 0 40px 0 20px;
-    @include phones {
+    @include tablets {
         margin: 0 5px;
     }
 }

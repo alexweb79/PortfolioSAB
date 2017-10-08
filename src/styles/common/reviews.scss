@@ -1,7 +1,7 @@
 .about-me__reviews {
     display: flex;
     flex-direction: row;
-    @include phones {
+    @include tablets {
         flex-direction: column;
     }
 }
@@ -11,7 +11,7 @@
     display: flex;
     margin-top: 20px;
     justify-content: flex-end;
-    @include phones {
+    @include tablets {
         justify-content: center;
     }
 }
@@ -21,7 +21,7 @@
     display: flex;
     margin-top: 20px;
     justify-content: flex-start;
-    @include phones {
+    @include tablets {
         justify-content: center;
     }
 }

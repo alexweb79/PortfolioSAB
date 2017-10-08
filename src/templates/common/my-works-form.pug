@@ -3,21 +3,21 @@
         .about-me-form__title
             .block-title__title.block-title__title-color-gray.block-title__title-smoller Связаться со мной
         .form-message
-            .form-message__text
-            .form-message__close Close
-        form().about-me-form.contact-form
+            .form-message__text Сообщение отправлено
+            button.form-message__close Закрыть
+        form(method="post").about-me-form
             label.about-me-form__name
-                input(type="text" name="firstname" id="firstname" placeholder="Имя").contact-form__name.textfield
-                .textfield__error-message
+                input(type="text" name="name" id="name" placeholder="Имя")
+                .error-message-name Вы не ввели имя
             label.about-me-form__email
-                input(type="email" name="email" id="email" placeholder="email").contact-form__email.textfield
-                .textfield__error-message
+                input(type="email" name="email" id="email" placeholder="Email")
+                .error-message-email Вы не ввели Email
             label.about-me-form__textarea
-                textarea(name="message", id="message", cols="30", rows="10", placeholder="Ваше сообщение").contact-form__message.textarea
-                .textarea__error-message
+                textarea(name="message", id="message", cols="30", rows="10", placeholder="Ваше сообщение")
+                .error-message-message Вы не ввели сообщение
             ul.button-login
                 li.button-login__item
-                    button.contact-form-submit.submit(type="submit") Отправить
+                    button.submit(type="submit" id="submit") Отправить
                 li.button-login__item
-                    button.contact-form-reset(type="reset") Очистить
+                    button(type="reset" id="reset") Очистить
                     
