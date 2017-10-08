@@ -50,12 +50,69 @@
 
 .form-message {
     display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
 }
 
-.form-message__text {}
+.form-message__text {
+    color: gray;
+}
 
-.form-message__close {}
+.form-message__close {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #6c9c5a;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    &:hover {
+        background-color: #4e8839;
+    }
+}
 
 .form-message_active {
-    display: block;
+    display: flex;
 }
+
+.error-message-name,
+.error-message-email,
+.error-message-message {
+    display: none;
+    background-color: #E44845;
+    color: white;
+    padding: 10px;
+    border: 1px solid #E44845;
+    border-radius: 5px;
+    margin: 10px;
+    &:before {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        margin-left: 30px;
+        margin-top: -25px;
+        margin-bottom: 5px;
+        border-bottom: 20px solid #E44845;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-radius: 2px;
+    }
+}
+
+// &:before {
+//     content: "";
+//     display: block;
+//     width: 0;
+//     height: 0;
+//     margin-left: 10%;
+//     margin-top: -10px;
+//     border-bottom: 20px solid red;
+//     border-left: 10px solid transparent;
+//     border-right: 10px solid transparent;
+// }

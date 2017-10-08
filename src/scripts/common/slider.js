@@ -4,34 +4,34 @@ module.exports = function() {
             title: "Проект 1",
             image: "../assets/images/img/slider/work-1.png",
             link: "http://alexweb79.ru/",
-            tags: ["html ", "css ", "js "],
+            tags: ["HTML ", "CSS ", "JavaScript "],
             num: "1"
         },
         {
             title: "Проект 2",
             image: "../assets/images/img/slider/work-2.png",
             link: "http://alexweb79.ru/",
-            tags: ["html ", "css ", "scss ", "pug ", "js "],
+            tags: ["HTML ", "CSS ", "SCSS ", "PUG ", "JavaScript "],
             num: "2"
         },
         {
             title: "Проект 2",
             image: "../assets/images/img/slider/work-3.png",
             link: "http://alexweb79.ru/",
-            tags: ["html ", "css ", "scss ", "pug ", "js ", "vue.js "],
+            tags: ["HTML ", "CSS ", "SCSS ", "PUG ", "JavaScript ", "VUE.js "],
             num: "3"
         },
         {
             title: "Проект 4",
             image: "../assets/images/img/slider/work-4.png",
             link: "http://alexweb79.ru/",
-            tags: ["html ", "css ", "scss ", "pug ", "js ", "vue.js ", "node.js "],
+            tags: ["HTML ", "CSS ", "SCSS ", "PUG ", "JavaScript ", "VUE.js ", "NODE.js "],
             num: "4"
         },
     ];
 
     var data2 = [{
-        iconDown: "../assets/img/sprite/sprite.svg#arrow_down",
+        iconDown: "../assets/images/icons/sprite_portf_arrow.svg#arrow_down",
         iconBtnPreview: "../assets/images/icons/link.svg"
     }];
 

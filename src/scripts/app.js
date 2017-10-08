@@ -1,13 +1,13 @@
 'use strict';
 
-const $ = require('jquery'); // если будет нужен
+// const $ = require('jquery'); // если будет нужен
 import preloader from './common/preloader';
 import hamburger from './common/hamburger';
 import flip from './common/flip';
 import arrowDown from './common/arrowDown';
 import pageScrollMenu from './common/pageScrollMenu';
 import slider from './common/slider';
-import validationForm from './common/validationForm';
+import validForm from './common/validForm';
 
 document.addEventListener('DOMContentLoaded', function() {
     slider();
@@ -16,23 +16,5 @@ document.addEventListener('DOMContentLoaded', function() {
     flip();
     arrowDown();
     pageScrollMenu();
-    validationForm();
+    validForm();
 });
-
-// $(() => {
-//     preloader.init({
-//         waiting: true
-//     });
-//     preloader.init();
-//     hamburger.init();
-//     flip.init();
-//     arrowDown.init();
-//     pageScrollMenu.init();
-//     slider.init($('.slider-1'));
-//     validForm.init($('.submit'));
-//     validationForm.init({
-//         $el: $('.contact-form'),
-//         $submitButton: $('.contact-form-submit'),
-//         $resetButton: $('.contact-form-reset')
-//     });
-// });
